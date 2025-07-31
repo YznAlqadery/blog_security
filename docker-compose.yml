@@ -5,7 +5,9 @@ services:
       - "5432:5432"
     restart: always
     environment:
+      POSTGRES_USER: YazanAlqadery
       POSTGRES_PASSWORD: Yazan6879
+      POSTGRES_DB: blog_db
 
   adminer:
     image: adminer
